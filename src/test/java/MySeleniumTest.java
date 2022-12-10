@@ -26,8 +26,7 @@ public class MySeleniumTest {
         permanentAddress.sendKeys("Orenburg, ul. Komsomol'skaja");
 
         button.click();
-        WebElement outputBox = driver.findElement(By.id("output"));
-        boolean isShowOutput = outputBox.isDisplayed();
+        boolean isShowOutput = driver.findElement(By.id("output")).isDisplayed();
 
         Assertions.assertTrue(isShowOutput);
         Thread.sleep(5000);
