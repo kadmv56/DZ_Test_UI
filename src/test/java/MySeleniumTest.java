@@ -22,8 +22,8 @@ public class MySeleniumTest {
 
         fullName.sendKeys("Ivanov Ivan Ivanovich");
         email.sendKeys("fdghj@mail.ru");
-        currentAddress.sendKeys("Orenburg, ul. Komsomol`skaj");
-        permanentAddress.sendKeys("Orenburg, ul. Komsomol`skaj");
+        currentAddress.sendKeys("Orenburg, ul. Komsomol'skaja");
+        permanentAddress.sendKeys("Orenburg, ul. Komsomol'skaja");
 
         button.click();
         WebElement outputBox = driver.findElement(By.id("output"));
